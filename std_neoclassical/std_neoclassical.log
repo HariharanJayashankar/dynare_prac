@@ -1,0 +1,86 @@
+Starting Dynare (version 4.5.6).
+Starting preprocessing of the model file ...
+Found 4 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...
+done
+Preprocessing completed.
+
+STEADY-STATE RESULTS:
+
+c 		 1.71367
+l 		 0.305241
+k 		 45.5357
+z 		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+            0.95             0.95                0
+            0.98             0.98                0
+            1.03             1.03                0
+             Inf              Inf                0
+
+
+There are 2 eigenvalue(s) larger than 1 in modulus 
+for 2 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         4
+  Number of stochastic shocks: 1
+  Number of state variables:   2
+  Number of jumpers:           2
+  Number of static variables:  0
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables    cepsilon
+cepsilon     1.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                   c               l               k               z
+Constant                    1.713715        0.305231       45.535581               0
+(correction)                0.000048       -0.000010       -0.000094               0
+k(-1)                       0.021505       -0.001433        0.979981               0
+z(-1)                       0.677112        0.228268        2.597079        0.950000
+cepsilon                    0.002222       -0.000485       -0.004378        0.007000
+k(-1),k(-1)                -0.000083        0.000013       -0.000051               0
+z(-1),k(-1)                 0.005165        0.000330        0.020601               0
+z(-1),z(-1)                 0.274778       -0.003678        1.701352               0
+cepsilon,cepsilon           0.000006               0       -0.000010               0
+k(-1),cepsilon              0.000013        0.000004       -0.000019               0
+z(-1),cepsilon              0.001616       -0.000259       -0.004279               0
+
+
+MOMENTS OF SIMULATED VARIABLES
+VARIABLE              MEAN       STD. DEV.        VARIANCE        SKEWNESS        KURTOSIS
+c                 1.700202        0.048258        0.002329       -0.461489        0.738219
+l                 0.305030        0.005079        0.000026        0.175423        0.187305
+k                45.042792        1.710344        2.925275       -0.498829        0.650359
+z                -0.004308        0.025844        0.000668       -0.021547        0.583438
+
+
+CORRELATION OF SIMULATED VARIABLES
+VARIABLE         c       l       k       z
+c           1.0000  0.4052  0.9588  0.7320
+l           0.4052  1.0000  0.1400  0.8466
+k           0.9588  0.1400  1.0000  0.5119
+z           0.7320  0.8466  0.5119  1.0000
+
+
+AUTOCORRELATION OF SIMULATED VARIABLES
+VARIABLE         1       2       3       4       5
+c           0.9964  0.9908  0.9842  0.9767  0.9685
+l           0.9066  0.8581  0.8129  0.7573  0.7058
+k           0.9984  0.9968  0.9943  0.9908  0.9866
+z           0.9605  0.9234  0.8868  0.8464  0.8071
+Total computing time : 0h00m06s
